@@ -11,19 +11,20 @@ export class ModalLivroComponent {
 
   constructor() { }
 
-  @Input() livro: Object;
+  @Input()
+  livro!: Object;
   statusModal: boolean = true;
   @Output() mudouModal = new EventEmitter()
 
   fecharModal() {
     this.statusModal = false
     this.mudouModal.emit(this.statusModal)
-    body.style.overflow = "scroll"
+    if (body) body.style.overflow = "scroll"
   }
 
   esconderScroll(){
     if(this.statusModal == true ) {
-      body.style.overflow = "hidden";
+      if (body) body.style.overflow = "hidden";
     }
   }
   

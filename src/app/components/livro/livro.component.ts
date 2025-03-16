@@ -7,8 +7,9 @@ import { Component, Input } from '@angular/core';
 })
 export class LivroComponent {
 
-  @Input() livro: Object;
-  modalAberto: boolean;
+  @Input()
+  livro!: Object;
+  modalAberto!: boolean;
 
   onModalChange(evento: boolean) {
     this.modalAberto = evento;

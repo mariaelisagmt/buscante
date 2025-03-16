@@ -9,9 +9,9 @@ import { LivroService } from 'src/app/service/livro.service';
 })
 export class ListaLivrosComponent implements OnDestroy{
 
-  listaLivros: [];
+  listaLivros!: [];
   campoBusca: string = '';
-  subscription: Subscription;
+  subscription!: Subscription;
 
   constructor(private service: LivroService) { }
 
