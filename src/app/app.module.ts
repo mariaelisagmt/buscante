@@ -11,6 +11,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { CabecalhoComponent } from './components/cabecalho/cabecalho.component';
 import { RodapeComponent } from './components/rodape/rodape.component';
 import { LivroComponent } from './components/livro/livro.component';
+import { AutoriaPipe } from './pipes/autoria.pipe';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { LivroComponent } from './components/livro/livro.component';
     RodapeComponent,
     LivroComponent,
     ListaLivrosComponent,
-    ModalLivroComponent
+    ModalLivroComponent,
+    AutoriaPipe
   ],
   imports: [
     BrowserModule,
