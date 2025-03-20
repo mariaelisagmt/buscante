@@ -12,6 +12,7 @@ import { CabecalhoComponent } from './components/cabecalho/cabecalho.component';
 import { RodapeComponent } from './components/rodape/rodape.component';
 import { LivroComponent } from './components/livro/livro.component';
 import { AutoriaPipe } from './pipes/autoria.pipe';
+import { MatIconModule } from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { AutoriaPipe } from './pipes/autoria.pipe';
     RouterModule,
     FormsModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
