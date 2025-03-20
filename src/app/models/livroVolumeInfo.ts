@@ -1,4 +1,4 @@
-import { ImageLinks, Item } from "./interfaces";
+import { ImageLinks, IItem } from "./interfaces";
 
 export class LivroVolumeInfo {
     title?: string;
@@ -9,7 +9,7 @@ export class LivroVolumeInfo {
     previewLink?: string;
     thumbnail?:  string;
 
-    constructor(item: Item) {
+    constructor(item: IItem) {
         this.title = item.volumeInfo?.title,
         this.authors = item.volumeInfo?.authors,
         this.publisher = item.volumeInfo?.publisher,

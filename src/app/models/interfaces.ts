@@ -37,12 +37,12 @@ export interface ImageLinks {
     extraLarge:     string;
 }
 
-export interface Item {
+export interface IItem {
     volumeInfo: VolumeInfo
 }
 
-export interface LivrosResultado {
-    items: Item[];
+export interface ILivrosResultado {
+    items: IItem[];
     totalItems: number;
 }
 
