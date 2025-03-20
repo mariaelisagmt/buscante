@@ -30,3 +30,23 @@ header {
     height: 100%;
     width: 150px;
   }
+
+  .cabecalho{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 1.0rem;
+  }
+
+  .icon {
+    color: #FFFFFF;
+    margin: 5px;
+  }

@@ -30,8 +30,7 @@ import { MatIconModule } from '@angular/material';
     RouterModule,
     FormsModule,
     HttpClientModule,
-    ReactiveFormsModule,
-    MatIconModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
